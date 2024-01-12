@@ -632,8 +632,8 @@ alertmanager:
     ## Image of Alertmanager
     ##
     image:
-      registry: quay.io
-      repository: prometheus/alertmanager
+      registry: ninghao
+      repository: alertmanager
       tag: v0.26.0
       sha: ""
 
@@ -2193,8 +2193,8 @@ prometheusOperator:
       ## Prometheus-operator webhook image
       ##
       image:
-        registry: quay.io
-        repository: prometheus-operator/admission-webhook
+        registry: ninghao
+        repository: admission-webhook
         # if not set appVersion field from Chart.yaml is used
         tag: ""
         sha: ""
@@ -2301,8 +2301,8 @@ prometheusOperator:
     patch:
       enabled: true
       image:
-        registry: registry.k8s.io
-        repository: ingress-nginx/kube-webhook-certgen
+        registry: registry.cn-hangzhou.aliyuncs.com
+        repository: google_containers/kube-webhook-certgen
         tag: v20221220-controller-v1.5.1-58-g787ea74b6
         sha: ""
         pullPolicy: IfNotPresent
@@ -2643,8 +2643,8 @@ prometheusOperator:
   ## Prometheus-operator image
   ##
   image:
-    registry: quay.io
-    repository: prometheus-operator/prometheus-operator
+    registry: ninghao
+    repository: prometheus-operator
     # if not set appVersion field from Chart.yaml is used
     tag: ""
     sha: ""
@@ -2670,8 +2670,8 @@ prometheusOperator:
   ##
   prometheusConfigReloader:
     image:
-      registry: quay.io
-      repository: prometheus-operator/prometheus-config-reloader
+      registry: ninghao
+      repository: prometheus-config-reloader
       # if not set appVersion field from Chart.yaml is used
       tag: ""
       sha: ""
@@ -2691,8 +2691,8 @@ prometheusOperator:
   ## Thanos side-car image when configured
   ##
   thanosImage:
-    registry: quay.io
-    repository: thanos/thanos
+    registry: ninghao
+    repository: thanos
     tag: v0.33.0
     sha: ""
 
@@ -3220,8 +3220,8 @@ prometheus:
     ## Image of Prometheus.
     ##
     image:
-      registry: quay.io
-      repository: prometheus/prometheus
+      registry: ninghao
+      repository: prometheus
       tag: v2.48.1
       sha: ""
 
@@ -4191,8 +4191,8 @@ thanosRuler:
     ## Image of ThanosRuler
     ##
     image:
-      registry: quay.io
-      repository: thanos/thanos
+      registry: ninghao
+      repository: thanos
       tag: v0.33.0
       sha: ""
 
